@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@700&family=Outfit:wght@400;800&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Preahvihear&family=Raleway&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Outfit',sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.container
+{
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.card
+{
+    background-color:hsl(0, 0%, 100%);
+    padding: .7rem;
+    border-radius: 17px;
+    text-align: center;
+    margin: 0 1em;
+}
+
+.card img
+{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text
+{
+    padding: 22px 18px ;
+}
+
+.text h2
+{
+    color: hsl(218, 44%, 22%);
+    padding-bottom: 15px;
+}
+
+.text p
+{
+    color:hsl(220, 15%, 55%) ;
+}
+
+
