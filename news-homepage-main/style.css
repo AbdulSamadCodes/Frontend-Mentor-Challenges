@@ -43,7 +43,7 @@ body {
 
 .navbar-list .nav-link {
   color: hsl(233, 8%, 79%);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease;
 }
 
 .navbar-list .nav-link:hover {
@@ -123,6 +123,13 @@ body {
   color: #fff;
   font-weight: 700;
   margin-block-end: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.main .right .right-sub h3:hover
+{
+  color:hsl(41, 80%, 56%) ;
 }
 
 .main .right .right-sub p {
@@ -158,6 +165,13 @@ body {
 
 .bottom-text h1 {
   color: hsl(236, 13%, 42%);
+}
+
+.bottom-text h3:hover
+{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: hsl(5, 85%, 63%);
 }
 
 .open-nav-btn {
