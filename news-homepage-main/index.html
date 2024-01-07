@@ -1,16 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  
-</head>
-<body>
+    
+    <link rel="stylesheet" href="style.css" />
 
-</body>
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <!----------NAVBAR----------->
+
+    <div class= "overlay ">
+
+    </div>
+
+    <div class="container">
+    <header>
+        <nav class="navbar">
+          <a href="#" class="logo">
+            <img src="assets/images/logo.svg" alt="" />
+          </a>
+
+          <ul class= "navbar-list active">
+            <li>
+              <a href="#" class= "nav-link"> Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">News</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Trending</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Popular</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+          </ul>
+
+          <div class="open-nav-btn">
+            <img src="assets/images/icon-menu.svg" alt="">
+          </div>
+
+          <div class="close-nav-btn">
+            <img src="assets/images/icon-menu-close.svg" alt="">
+          </div>
+
+        </nav>
+    
+    </header>
+
+    <!--------------------MAIN---------------->
+
+    <section class="main">
+      <div class="left">
+        <div class="left-img">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="" />
+        </div>
+
+        <div class="left-text">
+          <h1 class="left-text-h1">The Bright Future of Web 3.0?</h1>
+          <div class="left-text-2">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="btn">  Read more</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h1>New</h1>
+
+        <div class="right-sub">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="right-sub">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class= "right-sub">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <!--------------------BOTTOm SECTION--------------->
+
+     <section class= "bottom">
+
+      <div class="bottom-item">
+        
+      <img src="assets/images/image-retro-pcs.jpg" alt="" class="bottom-img">
+      <div class="bottom-text">
+      <h1>01</h1>
+      <h3>Reviving Retro PCs</h3>
+      <p> What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+
+
+      <div class="bottom-item">
+
+
+          <img src="assets/images/image-top-laptops.jpg" alt="" class="bottom-img">
+          <div class="bottom-text">
+          <h1>02</h1>
+          <h3>  Top 10 Laptops of 2022</h3>
+          <p>  Our best picks for various needs and budgets.</p>
+        </div>
+          </div>
+
+      <div class="bottom-item">
+
+        <img src="assets/images/image-gaming-growth.jpg" alt="" class="bottom-img">
+
+        <div class="bottom-text">
+        <h1>03</h1>
+        <h3>   The Growth of Gaming</h3>
+        <p>  How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+      </div>
+     </section>
+  </div>
+
+
+
+     <script src="script.js"></script>
+  </body>
 </html>
