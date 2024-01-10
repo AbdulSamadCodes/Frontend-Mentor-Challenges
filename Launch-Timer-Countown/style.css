@@ -1,0 +1,182 @@
+
+/*=============GOOGLE FONT========*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@400;700&family=Lora&family=Merriweather:wght@300&family=Montserrat:wght@700&family=Outfit:wght@400;800&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Preahvihear&family=Raleway&family=Red+Hat+Text:ital,wght@0,600;0,700;1,400&family=Roboto:wght@400;700&family=Ubuntu:wght@300&display=swap');
+
+/*----------RESET-------*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body
+{
+    min-height: 100vh;
+    background-image: url('images/pattern-hills.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Text', sans-serif;
+    overflow-x:hidden;
+}
+
+.main-container
+{
+    height: 70%;
+    background-image: url('images/bg-stars.svg');
+    background-color:hsl(234, 17%, 12%);
+}
+
+/*=======TIMER-CONTAINER========*/
+
+.timer-container
+{
+    max-width: 80%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.timer-container h1
+{
+    color:  hsl(0, 0%, 100%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/*======CARDS CONTAINER=======*/
+
+.cards
+{
+    width: 90%;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-timer
+{
+    background:linear-gradient(hsl(235,16%,15%) 50% , hsl(237,21%,20%) 50%);
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    height:200px ;
+    transform-style:preserve-3d ;
+    border-radius: 10px;
+    box-shadow: 2px 6px 4px 3px hsl(234, 17%, 12%);
+    position: relative;
+}
+
+.card-timer::after
+{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #030303;
+    top: 47%;
+    left:-5px;
+}
+
+.card-timer::before
+{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #030303;
+    top: 47%;
+    right:-5px;
+}
+
+.card-timer p
+{
+    color: hsl(345, 95%, 68%) ;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.card-description
+{
+    text-align: center;
+    color:  hsl(237, 18%, 59%);
+    letter-spacing: 3px;
+    font-weight: 600;
+
+}
+
+/*========SOCIALS-CONATAINER==============*/
+
+.socials-container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    top: 60px;
+}
+
+
+/*==============MEDIA QUERIES==============*/
+
+@media screen and (max-width:400px) 
+{
+    .timer-container
+    {
+        margin: 0;
+        max-width: 100%;
+        padding:20px 10px;
+        gap: 20px;
+    }
+    .timer-container h1
+    {
+        text-align: center;
+        padding-inline: 30px;
+    }
+    .cards
+    {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 30px;
+    }
+    .card
+    {
+        width: 50%;
+    }
+    .socials-container
+    {
+        position: static;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
