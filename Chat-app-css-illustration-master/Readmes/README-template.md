@@ -1,6 +1,12 @@
+<<<<<<<< HEAD:Chat-app-css-illustration-master/Readmes/README-template.md
 # Frontend Mentor - Chat app CSS illustration solution
 
 This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+========
+# Frontend Mentor - Notifications page solution
+
+This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+>>>>>>>> 9cb965259dbaae3b40a4ca76ff7ae50fba62a78e:notifications-page-main/Guides/README-template.md
 
 ## Table of contents
 
@@ -24,8 +30,15 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 Users should be able to:
 
+<<<<<<<< HEAD:Chat-app-css-illustration-master/Readmes/README-template.md
 - View the optimal layout for the component depending on their device's screen size
 - **Bonus**: See the chat interface animate on the initial load
+========
+- Distinguish between "unread" and "read" notifications
+- Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+>>>>>>>> 9cb965259dbaae3b40a4ca76ff7ae50fba62a78e:notifications-page-main/Guides/README-template.md
 
 ### Screenshot
 
