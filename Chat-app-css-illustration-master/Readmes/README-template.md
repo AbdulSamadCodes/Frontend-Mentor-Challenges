@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<<< HEAD:Chat-app-css-illustration-master/Readmes/README-template.md
 # Frontend Mentor - Chat app CSS illustration solution
 
@@ -7,6 +8,11 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 >>>>>>>> 9cb965259dbaae3b40a4ca76ff7ae50fba62a78e:notifications-page-main/Guides/README-template.md
+=======
+# Frontend Mentor - Chat app CSS illustration solution
+
+This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+>>>>>>> fcc1e746c04d21961d2d856faac5da8d374e16a4
 
 ## Table of contents
 
@@ -30,6 +36,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 Users should be able to:
 
+<<<<<<< HEAD
 <<<<<<<< HEAD:Chat-app-css-illustration-master/Readmes/README-template.md
 - View the optimal layout for the component depending on their device's screen size
 - **Bonus**: See the chat interface animate on the initial load
@@ -39,6 +46,10 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 >>>>>>>> 9cb965259dbaae3b40a4ca76ff7ae50fba62a78e:notifications-page-main/Guides/README-template.md
+=======
+- View the optimal layout for the component depending on their device's screen size
+- **Bonus**: See the chat interface animate on the initial load
+>>>>>>> fcc1e746c04d21961d2d856faac5da8d374e16a4
 
 ### Screenshot
 
