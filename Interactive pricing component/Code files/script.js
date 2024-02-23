@@ -5,11 +5,13 @@ let isYearly = false;
 
 function togglerHandler()
 {
+    
     let toggler = document.querySelector(".check-wrapper");
     toggler.addEventListener("click" , function (){
     this.classList.toggle("active");
     isYearly = isYearly ? false : true;
     })
+
 }
 
 togglerHandler();
