@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!---==================Favicon link===========================-->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!---==================Custom css link===========================-->
+
+  <link rel="stylesheet" href="/Code files/style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+   <!-------------------------Header------------------------->
+
+   <header class= "header">
+
+    <div class="container">
+
+      <div class="header-logo">
+        <a  class="logo">
+          <img src="/images/logo.svg" alt="">
+        </a>
+      </div>
+
+      <nav class= "navbar" data-navbar>
+
+        <div class="container">
+
+          <div class="navbar-top">
+            <button class="nav-toggle-btn btn-close" data-nav-toggler>
+                <img src="/images/icon-close-menu.svg" alt="">
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+
+          <li class="navbar-item has-sublist">
+
+            <div class="main-link" data-main-link>
+              <a href="" class="nav-link">Features</a>
+              <img src="/images/icon-arrow-up.svg" alt="">
+            </div>
+
+            <ul class="nav-sublist" data-nav-sublist>
+
+              <li>
+                <div class="sublist-item">
+
+                  <img src="/images/icon-todo.svg" alt="">
+
+                  <a href="" class="nav-link sub-link">Todo List</a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="sublist-item">
+
+                  <img src="/images/icon-calendar.svg" alt="">
+
+                  <a href="" class="nav-link sub-link">Calender</a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="sublist-item">
+
+                  <img src="/images/icon-reminders.svg" alt="">
+
+                  <a href="" class="nav-link sub-link">Remainders</a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="sublist-item">
+
+                  <img src="/images/icon-planning.svg" alt="">
+
+                  <a href="" class="nav-link sub-link">Planning</a>
+
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+
+          <li class="navbar-item has-sublist">
+
+            <div class="main-link" data-main-link>
+              <a href="" class="nav-link">Company</a>
+              <img src="/images/icon-arrow-up.svg" alt="">
+            </div>
+
+            <ul class="nav-sublist" data-nav-sublist>
+
+              <li>
+                <div class="sublist-item">
+                  <a href="" class="nav-link sub-link">History</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="sublist-item">
+                  <a href="" class="nav-link sub-link">Our Team</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="sublist-item">
+                  <a href="" class="nav-link sub-link">Blog</a>
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="navbar-item">
+            <a href="" class="nav-link">Careers</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="" class="nav-link">About</a>
+          </li>
+
+          </ul>
+
+          <div class="nav-action">
+
+            <button class="btn btn-secondary">
+               Login
+            </button>
+    
+            <button class="btn btn-primary">
+              Register
+           </button>
+            
+          </div>
+        </div>
+      </nav>
+
+      <button class="nav-toggle-btn btn-open" data-nav-toggler="">
+        <img src="/images/icon-menu.svg" alt="">
+      </button>
+  </div>
+
+    <div class="overlay" data-overlay>
+
+
+     </div>
+  </header>
+
+  <!-------------------------Header------------------------->
+
+
+  <section class="hero section">
+
+    <figure class="hero-banner">
+
+      <img src="/images/image-hero-mobile.png" alt="" class="img-cover">
+
+    </figure>
+
+    <div class="container">
+
+    <div class="hero-content">
+
+      <h1 class="hero-title text-center">
+          Make remote work
+      </h1>
+
+      <p class="hero-text text-center">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+
+      <div class="btn-wrapper">
+
+        <button class="hero-btn">
+          Learn More
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="clients-container">
+
+
+
+      <div class="client">
+        <img src="/images/client-databiz.svg" alt="" class="img-cover">
+      </div>
+
+      <div class="client">
+        <img src="/images/client-audiophile.svg" alt="" class="img-cover">
+      </div>
+
+      <div class="client">
+        <img src="/images/client-meet.svg" alt="" class="img-cover">
+      </div>
+
+      <div class="client">
+        <img src="/images/client-maker.svg" alt=""class="img-cover">
+      </div>
+
+    </div>
+    
+    </div>
+
+  </section>
+
+  
+    <!---==================Custom script link===========================-->
+
+    <script src="/Code files/script.js"></script>
+  
+</body>
+</html>
