@@ -1,0 +1,286 @@
+
+/*=========================Font========================*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Arvo:wght@700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;700&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Preahvihear&family=Raleway&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*=========================Custom Properties========================*/
+
+:root
+{
+    /*==========Colors==========*/
+
+    --White:hsl(0 , 0% , 95%);
+    --Blue: hsl(246, 80%, 60%);
+    --Orange : hsl(15, 100%, 70%);
+    --Soft-blue : hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green : hsl(145, 58%, 55%);
+    --Violet : hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --Gray:hsla(0  , 0% , 100% , 0.5);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    /*==========Typography==========*/
+
+    --fs-1:26px;
+    --fs-2:17px;
+
+    --font-family-Rubik:"Rubik", sans-serif;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+li{
+list-style:none;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button{
+cursor:pointer;
+}
+
+button,
+a,
+span
+input {
+display:block;
+}
+
+img{
+max-width:100%;
+display:block;
+height:auto;
+}
+
+button,
+input{
+background:none;
+border:none;
+outline:none;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:30px;
+scrollbar-width:thin;
+}
+
+body
+{
+   background-color:var(--Very-dark-blue) ; 
+   font-family:var(--font-family-Rubik) ;
+}
+
+/*=========================Reused styles===========================*/
+
+.img-cover
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.clr-gray{color: var(--Gray);}
+
+.radius-12{border-radius: 12px;}
+
+.radius-10{border-radius: 10px;}
+
+.clr-pale-blue{color: var(--Pale-Blue);}
+
+.clr-white{color: white;}
+
+.card-title {font-size: 20px;}
+
+.current{font-size:30px;}
+
+/*=========================Main styles===========================*/
+
+.main-container{padding-inline: 16px;}
+
+.cta-container{background-color: var(--Dark-blue);}
+
+
+.dashboard-container
+{
+    display: grid;
+    justify-content: center;
+    margin-block:50px ;
+    gap: 25px;
+    margin-inline: auto;
+}
+
+
+.user-info-container{
+    position: relative;
+    padding: 22px 20px;
+    z-index: 10;
+}
+
+.user-info-container::before
+{
+    content: '';
+    position: absolute;
+    background-color:var(--Violet);
+    height: 103%;
+    width: 100%;
+    top:0px;
+    left: 0;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.user-profile
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.user-img
+{
+    width:80px;
+    height:80px;
+    overflow: hidden;
+    border-radius:50%;
+    border: 3px solid var(--White);
+}
+
+
+
+.user-info{color:var(--White);}
+
+.report{
+    font-size: 14px;
+    color: var(--Gray);
+}
+
+.name{line-height: 1.5;}
+
+.user-name{
+    font-size:var(--fs-1);
+    font-weight: 300;
+    margin-block-start:3px;
+}
+
+.cta-options
+{
+    padding: 22px 20px;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-btn{max-width: max-content;}
+
+.cta-btn{
+    font-size:var(--fs-2);
+    transition:color 0.5s ease ;
+}
+
+.cta-btn:is(:hover , :focus){color: var(--White);}
+
+.dashboard-card
+{
+    background-repeat: no-repeat;
+    background-position:100% top ;
+    position: relative;
+    background-size:60px;
+    padding-block-start:40px;
+}
+
+.card-content
+{
+    position: relative;
+    padding-block:30px;
+    padding-inline: 20px;
+    background-color:var(--Dark-blue);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.card-desc,
+.card-data
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-data{margin-block-start: 13px;}
+
+.last-desc{font-size: 13px;}
+
+/*=========================Media queries===========================*/
+
+@media(min-width:768px)
+{
+.dashboard-container{
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     max-width:1160px;
+}
+
+.cta-container{grid-row: 1/3 ;}
+
+.dashboard-card:nth-child(6){grid-column: 2 / 3;}
+
+.user-profile,
+.cta-options{display: grid;}
+
+.cta-options{gap: 20px;}
+}
+
+
+@media(min-width:1200px)
+{
+    .main-container
+    {
+        display: grid;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .dashboard-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .dashboard-card:nth-child(6){grid-column: auto;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
