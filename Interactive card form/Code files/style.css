@@ -1,0 +1,399 @@
+/*=============== Google font link================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Arvo:wght@700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;700&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Preahvihear&family=Raleway&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*=========================Custom Properties========================*/
+
+:root {
+    /*==========Colors============*/
+
+    --gradient: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --red: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --Light-grayish: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+
+    /*==========Typography============*/
+
+    --fs-1: 14px;
+
+    --font-family: "Space Grotesk", sans-serif;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+button,
+input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+    scrollbar-width: thin;
+}
+
+/*=========================Reused styles===========================*/
+
+.is-relative {
+    position: relative;
+}
+
+.is-absolute {
+    position: absolute;
+}
+
+.main-container {
+    display: grid;
+    max-width: 100%;
+}
+
+.clr-white {
+    color: white;
+}
+
+.clr-light {
+    color: var(--Light-grayish);
+}
+
+.clr-dark {
+    color: var(--Very-dark-violet);
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img {
+    max-width: 320px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/*=========================Main styles===========================*/
+
+/*=========CVC card=======*/
+
+.card-cvc {
+    max-width: max-content;
+    right: 10px;
+    top: 30px;
+    z-index: 5;
+}
+
+.card-cvc>div {
+    width: 100%;
+    height: 100%;
+}
+
+.cvc-card-content {
+    width: 100%;
+    top: 74px;
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: 10px;
+    right: 30px;
+}
+
+/*=========Debit card=======*/
+
+.debit-card {
+    top: 160px;
+    z-index: 10;
+    left: 10px;
+}
+
+.debit-card>div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-head {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.figure-lg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--white);
+
+}
+
+.figure-sm {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.card-number {
+    font-size: 25px;
+}
+
+
+.wrapper {
+    display: grid;
+    margin-block-start: 6px;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.exp-date>span {
+    display: inline-block;
+}
+
+.name {
+    letter-spacing: 2px;
+}
+
+.debit-card-content {
+    min-width: 100%;
+}
+
+
+/*=========Form=======*/
+
+.form-container {
+    padding-block: 120px 20px;
+    padding-inline: 10px;
+}
+
+.form {
+    display: grid;
+    gap: 25px;
+    margin-inline: 5px;
+}
+
+.label {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: var(--fs-1);
+}
+
+.input {
+    border: 1px solid var(--Light-grayish);
+    padding: 12px 10px;
+    width: 80%;
+    border-radius: 5px;
+    margin-block-start: 5px;
+    font-size: 16px;
+}
+
+.input:is(:hover, :focus) {
+    border: 1px solid var(--Very-dark-violet);
+}
+
+.date-inputs-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.date {
+    display: flex;
+    gap: 10px;
+}
+
+.date input {
+    max-width: 50px;
+}
+
+.btn {
+    display: grid;
+    place-content: center;
+    background-color: var(--Very-dark-violet);
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 12px;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.complete-container {
+    display: grid;
+    gap: 30px;
+    display: none;
+}
+
+.complete-container.active {
+    display: grid;
+}
+
+.check-icon {
+    margin-inline: auto;
+}
+
+.complete-container p {
+    color: var(--Dark-grayish-violet);
+    margin-block-start: 10px;
+    font-weight: 600;
+}
+
+.complete-container .btn {
+    margin-inline: auto;
+}
+
+.error-span {
+    color: var(--red);
+    margin-block-start: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/*====================Media queries=======================*/
+
+@media(min-width:575px) {
+    :root {
+        --fs-1: 16px
+    }
+
+    .form-container {
+        padding-block: 50px 20px;
+    }
+
+    .form {
+        margin-inline: auto;
+        max-width: 530px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .main-container {
+        grid-template-columns: 30% 70%;
+    }
+
+    .bg-container {
+        height: 100vh;
+    }
+
+    .form-container {
+        display: grid;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .date .input {
+        max-width: 80px;
+        gap: 40px;
+    }
+
+    .form {
+        max-width: 420px;
+    }
+
+    .card-cvc {
+        top: 60%;
+        left: 30px;
+    }
+
+}
+
+@media(min-width:992px) {
+    .form {
+        min-width: 500px;
+        gap: 30px;
+    }
+
+    .main-container {
+        grid-template-columns: 30% 70%;
+    }
+
+    .debit-card {
+        left: 20px;
+    }
+
+    .card-cvc {
+        left: 30px;
+    }
+}
+
+
+@media(min-width:1200px) {
+    .card-cvc {
+        left: 250px;
+    }
+
+    .debit-card {
+        left: 200px;
+    }
+
+    .form-container {
+        justify-content: center;
+    }
+
+    .date-inputs-wrapper {
+        gap: 50px;
+    }
+
+    .date {
+        justify-content: space-between;
+    }
+
+    .date input {
+        max-width: 80px;
+    }
+}
