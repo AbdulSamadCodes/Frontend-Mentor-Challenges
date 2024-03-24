@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==============Favicon link===============-->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!--==============Custom css link===============-->
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <!--==============Main container===============-->
+
+    <div class="main_container">
+      <div class="calculator_container">
+        <form class="form" data-form>
+          <div class="input_wrapper">
+            <label for="days_field" class="label"> Day </label>
+
+            <input
+              type="text"
+              name=""
+              id="days_field"
+              class="input_field days_field"
+              data-days-field
+              placeholder="DD"
+            />
+
+            <span class="error-message" data-error-message></span>
+          </div>
+
+          <div class="input_wrapper">
+            <label for="month_field" class="label"> Month </label>
+
+            <input
+              type="text"
+              name=""
+              id="month_field"
+              class="input_field month_field"
+              data-days-field
+              placeholder="MM"
+            />
+
+            <span class="error-message" data-error-message></span>
+          </div>
+
+          <div class="input_wrapper">
+            <label for="year_field" class="label"> Year </label>
+
+            <input
+              type="text"
+              name=""
+              id="year_field"
+              class="input_field year_field"
+              data-days-field
+              placeholder="YY"
+            />
+
+            <span class="error-message" data-error-message></span>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <img src="/assets/images/icon-arrow.svg" alt="" width="25" />
+          </button>
+        </form>
+
+        <div class="answers">
+          <div class="answer_wrapper">
+            <span class="result">- -</span>
+            <p class="time_span">years</p>
+          </div>
+
+          <div class="answer_wrapper">
+            <span class="result">- -</span>
+            <p class="time_span">months</p>
+          </div>
+
+          <div class="answer_wrapper">
+            <span class="result">- -</span>
+            <p class="time_span">days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==============Custom script link===============-->
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>
