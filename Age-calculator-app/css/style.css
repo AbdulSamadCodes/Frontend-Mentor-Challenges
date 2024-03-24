@@ -30,7 +30,7 @@
 :root {
   /*==========Colors=======*/
 
-  --Purple:hsl(259, 100%, 65%);
+  --Purple: hsl(259, 100%, 65%);
   --Light_red: hsl(0, 100%, 67%);
 
   --White: hsl(0, 0%, 100%);
@@ -113,7 +113,7 @@ body {
 
 .main_container {
   padding-inline: 15px;
-  min-height:100dvh;
+  min-height: 100dvh;
 }
 
 .calculator_container {
@@ -193,9 +193,9 @@ body {
 
 .error-message {
   font-family: Poppins_Italic;
-  color:var(--Light_red);
-  font-size:13px;
-  font-weight:500;
+  color: var(--Light_red);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 /*=============Media queries============*/
@@ -234,7 +234,7 @@ body {
     --fs-2: 20px;
   }
 
-  .main_container{
+  .main_container {
     display: grid;
     align-items: center;
   }
@@ -272,4 +272,3 @@ body {
     padding-block: 8px;
   }
 }
-

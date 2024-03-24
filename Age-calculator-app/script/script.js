@@ -9,6 +9,11 @@ const daysInput = document.querySelector("[data-day-input]");
 const monthsInput = document.querySelector("[data-month-input]");
 const yearsInput = document.querySelector("[data-year-input]");
 
+const yearsResult = document.querySelector("[data-years-result]");
+const monthsResult = document.querySelector("[data-months-result]");
+const daysResult = document.querySelector("[data-days-result]");
+
+
 //Function to set errors
 
 function setError(element,message ,elementIndex){  
@@ -85,7 +90,7 @@ function validateDates(){
   const year = yearsInput.value;
 
   const currentDate = new Date().getTime();
-  const inputDate = new Date(`${year}-${month}-${day}`)
+  const inputDate = new Date(`${year}-${month}-${day}`);
 
   if(currentDate < inputDate.getTime()){
     inputWrappers.forEach((input , index) => setError(input,"Date must be from past",index))
@@ -110,12 +115,50 @@ function validateInputs(){
   validateYear();
 }
 
+//Function to calculate age
+
+function calculateAge(){
+
+  const day =  daysInput.value; 
+  const month = monthsInput.value; 
+  const year = yearsInput.value;
+
+  const currentDate = new Date();
+  const inputDate = new Date(`${year}-${month}-${day}`);
+
+  let yearsAnswer;
+  if((currentDate.getMonth() === inputDate.getMonth()) && (currentDate.getDate() === inputDate.getDate())){
+     yearsAnswer = currentDate.getYear() - inputDate.getYear();
+  } else{
+     yearsAnswer = currentDate.getYear() - inputDate.getYear() - 1;
+  }
+
+  let monthsAnswer = currentDate.getMonth() - inputDate.getMonth();
+  if(monthsAnswer < 0 || monthsAnswer === 0 && currentDate.getDate() < inputDate.getDate()){
+    monthsAnswer+=12;
+  }
+  
+  let daysAnswer = currentDate.getDate() - inputDate.getDate();
+  if(new Date(year , month - 1, 31).getDate() === 31){
+    daysAnswer+=31
+  } else{
+    daysAnswer+=30;
+  }
+ 
+  if((!isNaN(yearsAnswer)) && (!isNaN(monthsAnswer)) && (!isNaN(daysAnswer))){
+    yearsResult.textContent = yearsAnswer;
+    monthsResult.textContent = monthsAnswer;
+    daysResult.textContent = daysAnswer;
+  }
+}
+
 //Adding eventlistener on form
 
 calculatorForm.addEventListener("submit", (e) => {
   e.preventDefault();
   validateDates();   
   validateInputs(); 
+  calculateAge()
 });
 
 const eventsArray = [validateDay , validateMonth , validateYear];
