@@ -30,8 +30,8 @@
 :root {
   /*==========Colors=======*/
 
-  --Purple: hsl(259, 100%, 65%);
-  --Light_red: hsl(0, 100%, 67%;);
+  --Purple:hsl(259, 100%, 65%);
+  --Light_red: hsl(0, 100%, 67%);
 
   --White: hsl(0, 0%, 100%);
   --Off_white: hsl(0, 0%, 94%);
@@ -113,6 +113,7 @@ body {
 
 .main_container {
   padding-inline: 15px;
+  min-height:100dvh;
 }
 
 .calculator_container {
@@ -191,7 +192,10 @@ body {
 }
 
 .error-message {
-  color: var(--Light_red);
+  font-family: Poppins_Italic;
+  color:var(--Light_red);
+  font-size:13px;
+  font-weight:500;
 }
 
 /*=============Media queries============*/
@@ -230,10 +234,16 @@ body {
     --fs-2: 20px;
   }
 
+  .main_container{
+    display: grid;
+    align-items: center;
+  }
+
   .calculator_container {
     min-width: 550px;
     padding: 30px 35px;
     border-bottom-right-radius: 130px;
+    margin-block-start: 0;
   }
 
   .input_field {
@@ -262,3 +272,4 @@ body {
     padding-block: 8px;
   }
 }
+
